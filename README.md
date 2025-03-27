@@ -58,3 +58,4 @@ npm start
 
 
 ## References
+- Honorable mention: Boilerplate Frontend: https://github.com/satnaing/shadcn-admin
