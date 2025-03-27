@@ -2,7 +2,7 @@
   "name": "notebot",
   "version": "1.0.0",
   "description": "A bot application to collect your notes, store it locally and index it for fast search, publish it on git when needed.",
-  "main": "src/main.js",
+  "main": "electron/src/main.js",
 "scripts": {
   "start": "electron ."
 },
