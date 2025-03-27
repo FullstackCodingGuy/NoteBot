@@ -55,6 +55,12 @@ export const sidebarData: SidebarData = {
           icon: IconLayoutDashboard,
         },
         {
+          title: 'Notebook',
+          url: '/notebook',
+          badge: '3',
+          icon: IconMessages,
+        },
+        {
           title: 'Tasks',
           url: '/tasks',
           icon: IconChecklist,
