@@ -1,0 +1,25 @@
+{
+  "name": "notebot",
+  "version": "1.0.0",
+  "description": "A bot application to collect your notes, store it locally and index it for fast search, publish it on git when needed.",
+  "main": "src/main.js",
+"scripts": {
+  "start": "electron ."
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullstackCodingGuy/NoteBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullstackCodingGuy/NoteBot/issues"
+  },
+  "homepage": "https://github.com/FullstackCodingGuy/NoteBot#readme",
+  "dependencies": {
+    "dexie": "^4.0.11",
+    "electron": "^35.1.1",
+    "markdown-it": "^14.1.0"
+  }
+}
