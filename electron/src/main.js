@@ -18,7 +18,10 @@ app.whenReady().then(() => {
   // mainWindow.loadFile("electron/src/index.html");
   // Load React app in production or development mode
   if (process.env.NODE_ENV === "Development") {
-    mainWindow.loadURL("http://localhost:3000"); // React dev server
+    mainWindow.loadURL(
+      process.env.APP_URL
+      // "http://localhost:3000"
+    ); // React dev server
   } else {
     mainWindow.loadFile(path.join(__dirname, "index.html")); // Production build
   }
