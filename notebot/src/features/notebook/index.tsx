@@ -1,3 +1,6 @@
+/**
+ * Notebook application
+ */
 import { useState } from 'react'
 import { Fragment } from 'react/jsx-runtime'
 import { format } from 'date-fns'
@@ -13,6 +16,7 @@ import {
   IconSearch,
   IconSend,
   IconVideo,
+  IconNotebook
 } from '@tabler/icons-react'
 import { cn } from '@/lib/utils'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -66,7 +70,7 @@ export default function Chats() {
     <>
       {/* ===== Top Heading ===== */}
       <Header>
-        <Search />
+        {/* <Search /> */}
         <div className='ml-auto flex items-center space-x-4'>
           <ThemeSwitch />
           <ProfileDropdown />
@@ -80,8 +84,8 @@ export default function Chats() {
             <div className='sticky top-0 z-10 -mx-4 bg-background px-4 pb-3 shadow-md sm:static sm:z-auto sm:mx-0 sm:p-0 sm:shadow-none'>
               <div className='flex items-center justify-between py-2'>
                 <div className='flex gap-2'>
-                  <h1 className='text-2xl font-bold'>Inbox</h1>
-                  <IconMessages size={20} />
+                  <h1 className='text-2xl font-bold'>Notebook</h1>
+                  {/* <IconNotebook size={20} /> */}
                 </div>
 
                 <Button
@@ -100,7 +104,7 @@ export default function Chats() {
                 <input
                   type='text'
                   className='w-full flex-1 bg-inherit text-sm focus-visible:outline-none'
-                  placeholder='Search chat...'
+                  placeholder='Search notebook...'
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                 />
