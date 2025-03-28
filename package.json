@@ -5,8 +5,8 @@
   "main": "electron/src/main.js",
   "scripts": {
     "start": "electron .",
-    "electron": "electron .",
-    "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\""
+    "electron-dev": "concurrently \"wait-on http://localhost:5173 && npm start\"",
+    "electron-prod": "concurrently \"cd notebot/dist && http-server -p 8574\" \"wait-on http://localhost:8574 && electron .\""
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "electron": "^35.1.1",
     "markdown-it": "^14.1.0",
     "wait-on": "^8.0.3"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }

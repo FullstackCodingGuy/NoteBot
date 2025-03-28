@@ -23,6 +23,9 @@ app.whenReady().then(() => {
       // "http://localhost:3000"
     ); // React dev server
   } else {
-    mainWindow.loadFile(path.join(__dirname, "index.html")); // Production build
+    // const asset_path = path.join(__dirname, "index.html"); 
+    // const asset_path = path.join(__dirname, "../../notebot/dist/", "index.html");
+    // console.log('asset_path: ', asset_path);
+    mainWindow.loadFile(asset_path); // Production build
   }
 });

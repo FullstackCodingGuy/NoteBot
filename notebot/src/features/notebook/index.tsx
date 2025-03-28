@@ -15,9 +15,7 @@ import {
   IconPlus,
   IconSearch,
   IconSend,
-  IconVideo,
-  IconNotebook
-} from '@tabler/icons-react'
+  IconVideo} from '@tabler/icons-react'
 import { cn } from '@/lib/utils'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
@@ -26,14 +24,13 @@ import { Separator } from '@/components/ui/separator'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { ProfileDropdown } from '@/components/profile-dropdown'
-import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { NewChat } from './components/new-chat'
 import { type ChatUser, type Convo } from './data/chat-types'
 // Fake Data
 import { conversations } from './data/convo.json'
 
-export default function Chats() {
+export default function Notebook() {
   const [search, setSearch] = useState('')
   const [selectedUser, setSelectedUser] = useState<ChatUser | null>(null)
   const [mobileSelectedUser, setMobileSelectedUser] = useState<ChatUser | null>(
