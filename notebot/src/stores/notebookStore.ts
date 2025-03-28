@@ -1,12 +1,14 @@
+import { title } from 'process'
 import { create } from 'zustand'
+import { fetchWikiPages } from '@/lib/ghlib'
 
 // Define the shape of the note object
 export interface Note {
-  id: string
+  id?: string
   title: string
   content: string
-  created: string
-  updated: string
+  created?: string
+  updated?: string
 }
 
 interface NoteBookStore {
@@ -14,7 +16,7 @@ interface NoteBookStore {
   addNote: (note: Note) => void
   deleteNote: (note: Note) => void
   updateNote: (note: Note) => void
-  setNotes: (notes: Note[]) => void
+  // setNotes: (notes: Note[]) => void
   loadNotes: () => void
 }
 
@@ -35,9 +37,20 @@ const useNoteBookStore = create<NoteBookStore>((set) => ({
     set((state) => ({
       notes: state.notes.map((n) => (n.id === note.id ? note : n)),
     })),
-  setNotes: (notes: Note[]) => set({ notes }),
-  loadNotes: () => {
-    const notes: Note[] = [
+  // setNotes: (notes: Note[]) => {
+  //   set({ notes })
+  // },
+  loadNotes: async () => {
+    
+
+    const _savedNotes = localStorage.getItem('_notebot_notes')
+    if(_savedNotes?.length) {
+      const notes = JSON.parse(_savedNotes)
+      set({ notes })
+      return
+    }
+
+    const _notes: Note[] = [
       {
         id: '1',
         title: 'First Note',
@@ -60,7 +73,9 @@ const useNoteBookStore = create<NoteBookStore>((set) => ({
         updated: '2021-01-03',
       },
     ]
-    set({ notes })
+
+    set({ notes: _notes })
+    localStorage.setItem('_notebot_notes', JSON.stringify(_notes))
   },
 }))
 

@@ -6,7 +6,6 @@ import { Fragment } from 'react/jsx-runtime'
 import { format } from 'date-fns'
 import {
   IconArrowLeft,
-  IconCheck,
   IconEdit,
   IconMessages,
   IconPencilCheck,
@@ -14,7 +13,7 @@ import {
   IconSearch,
 } from '@tabler/icons-react'
 import useNoteBookStore, { Note } from '@/stores/notebookStore'
-import { cn } from '@/lib/utils'
+import { cn, SanitizedHTML } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
@@ -39,9 +38,21 @@ export default function Notebook() {
   const { notes, loadNotes } = useNoteBookStore()
 
   const [editMode, seteditMode] = useState(false)
+
   // Load the notes
   useEffect(() => {
     loadNotes()
+
+    // if (selectedNote) {
+    //   console.log('fetching content..')
+    //   fetchWikiContent(selectedNote.title).then((content) => {
+    //     setSelectedNote({
+    //       ...selectedNote,
+    //       content: content,
+    //     })
+    //     console.log('Content:', content)
+    //   })
+    // }
   }, [loadNotes])
 
   // Filtered data based on the search query
@@ -121,7 +132,7 @@ export default function Notebook() {
                     <div className='flex gap-2'>
                       <div>
                         <span className='col-start-2 row-span-2 font-medium'>
-                          {note.title}
+                          {SanitizedHTML(note.title)}
                         </span>
                       </div>
                     </div>
@@ -129,45 +140,6 @@ export default function Notebook() {
                   <Separator className='my-1' />
                 </Fragment>
               ))}
-              {/* {filteredChatList.map((chatUsr) => {
-                const { id, profile, username, messages, fullName } = chatUsr
-                const lastConvo = messages[0]
-                const lastMsg =
-                  lastConvo.sender === 'You'
-                    ? `You: ${lastConvo.message}`
-                    : lastConvo.message
-                return (
-                  <Fragment key={id}>
-                    <button
-                      type='button'
-                      className={cn(
-                        `-mx-1 flex w-full rounded-md px-2 py-2 text-left text-sm hover:bg-secondary/75`,
-                        selectedUser?.id === id && 'sm:bg-muted'
-                      )}
-                      onClick={() => {
-                        setSelectedUser(chatUsr)
-                        setMobileSelectedUser(chatUsr)
-                      }}
-                    >
-                      <div className='flex gap-2'>
-                        <Avatar>
-                          <AvatarImage src={profile} alt={username} />
-                          <AvatarFallback>{username}</AvatarFallback>
-                        </Avatar>
-                        <div>
-                          <span className='col-start-2 row-span-2 font-medium'>
-                            {fullName}
-                          </span>
-                          <span className='col-start-2 row-span-2 row-start-2 line-clamp-2 text-ellipsis text-muted-foreground'>
-                            {lastMsg}
-                          </span>
-                        </div>
-                      </div>
-                    </button>
-                    <Separator className='my-1' />
-                  </Fragment>
-                )
-              })} */}
             </ScrollArea>
           </div>
 
@@ -198,7 +170,8 @@ export default function Notebook() {
                         {selectedNote.title}
                       </span>
                       <span className='col-start-2 row-span-2 row-start-2 line-clamp-1 block max-w-32 text-ellipsis text-nowrap text-xs text-muted-foreground lg:max-w-none lg:text-sm'>
-                        {format(selectedNote.updated, 'h:mm a')}
+                        {selectedNote.updated &&
+                          format(selectedNote.updated, 'h:mm a')}
                       </span>
                     </div>
                   </div>
@@ -210,7 +183,7 @@ export default function Notebook() {
                     <Button
                       size='icon'
                       variant='ghost'
-                      className='hidden size-8 rounded-full sm:inline-flex lg:size-10'
+                      className='mr-4 hidden size-8 rounded-full sm:inline-flex lg:size-10'
                       onClick={() => seteditMode(true)}
                     >
                       <IconEdit size={22} className='stroke-muted-foreground' />{' '}
@@ -219,9 +192,7 @@ export default function Notebook() {
                   )}
                   {editMode && (
                     <>
-                      <Button
-                        variant='default'
-                      >
+                      <Button variant='default'>
                         <IconPencilCheck
                           size={22}
                           className='stroke-muted-foreground'
@@ -231,7 +202,7 @@ export default function Notebook() {
                       <Button
                         size='icon'
                         variant='ghost'
-                        className='hidden size-8 rounded-full sm:inline-flex lg:size-10 mx-5'
+                        className='mx-5 hidden size-8 rounded-full sm:inline-flex lg:size-10'
                         onClick={() => seteditMode(false)}
                       >
                         <IconPencilX
@@ -253,6 +224,8 @@ export default function Notebook() {
               </div>
 
               {/* Markdown Content */}
+              {/* <Markdown>{}</Markdown> */}
+
               <div className='flex flex-1 flex-col gap-2 rounded-md px-4 pb-4 pt-4'>
                 <div className='flex size-full flex-1'>
                   <Fragment>
@@ -263,7 +236,9 @@ export default function Notebook() {
                           'mt-1 block text-xs font-light italic text-muted-foreground'
                         )}
                       >
-                        Created: {format(selectedNote.created, 'h:mm a')}
+                        Created:{' '}
+                        {selectedNote.created &&
+                          format(selectedNote.created, 'h:mm a')}
                       </span>
                     </div>
                     {/* <div className='text-center text-xs'>{"asdf"}</div> */}
