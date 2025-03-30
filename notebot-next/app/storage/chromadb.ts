@@ -29,7 +29,8 @@ class ChromaDb<T extends Record<string, any>> {
     }
     console.log("adding document: ", documents);
     await this.collection.upsert({ documents, metadatas, ids });
-
+    const totalCount = await this.collection.count();
+    console.log('total count: ', totalCount)
     // await this.collection.upsert({
     //   documents: [
     //     "This is a document about pineapple",

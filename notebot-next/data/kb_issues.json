@@ -1,0 +1,602 @@
+[
+    {
+        "id": "8fe0d13d-ae84-4198-b632-a7badb433e6c",
+        "title": "Mac Startup Disk Full Issue",
+        "content": "Your Mac startup disk is full, causing slow performance. Delete unnecessary files or use external storage.",
+        "tags": [
+            "mac",
+            "storage",
+            "performance"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "28f5d5c6-11d6-401e-a652-ca7516244ca6",
+        "title": "External Device Not Recognized on Windows",
+        "content": "Windows is not detecting your external USB or hard drive. Try updating drivers or checking connections.",
+        "tags": [
+            "windows",
+            "hardware",
+            "usb"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "2991ce1e-610f-4f95-9699-5efb159d8a6a",
+        "title": "Bluetooth Not Working on Mac",
+        "content": "Mac Bluetooth is not connecting to devices. Restart Bluetooth services and reset PRAM/NVRAM.",
+        "tags": [
+            "mac",
+            "bluetooth",
+            "connectivity"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "4b9fa8f7-2974-4a63-a24e-c5b2b906ef56",
+        "title": "Windows Update Stuck",
+        "content": "Windows update is stuck at a certain percentage. Restart the update service or boot in safe mode.",
+        "tags": [
+            "windows",
+            "updates",
+            "troubleshooting"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "ca7a9042-fdfd-4759-ad33-6d7b73a20a65",
+        "title": "Mac Keyboard Not Responding",
+        "content": "Mac keyboard is unresponsive. Try resetting the SMC or using an external keyboard to diagnose the issue.",
+        "tags": [
+            "mac",
+            "keyboard",
+            "hardware"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e1a936ca-918c-46b8-a66a-5bf51f5d5ca4",
+        "title": "Windows Blue Screen of Death (BSOD)",
+        "content": "Windows is crashing with a blue screen error. Analyze the error code and check for faulty drivers.",
+        "tags": [
+            "windows",
+            "bsod",
+            "crash"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "b019fe73-eb74-41a0-9812-4132ea1135e7",
+        "title": "MacBook Battery Draining Fast",
+        "content": "MacBook battery drains quickly. Check battery health, reduce background apps, and adjust power settings.",
+        "tags": [
+            "mac",
+            "battery",
+            "power"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "46d79b43-0025-4fd3-b686-d97c6cd54e31",
+        "title": "Windows WiFi Keeps Disconnecting",
+        "content": "Windows WiFi randomly disconnects. Reset network settings and update the wireless adapter driver.",
+        "tags": [
+            "windows",
+            "wifi",
+            "network"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "ca94df96-2c20-4d81-8ecc-489430aa034b",
+        "title": "Mac Sound Not Working",
+        "content": "Mac audio is not working. Ensure output device is selected correctly and reset the core audio process.",
+        "tags": [
+            "mac",
+            "audio",
+            "sound"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "1d209a42-a1e0-4b45-9ca3-7b76a254a633",
+        "title": "Windows Slow Performance Issue",
+        "content": "Windows PC running slow. Clean disk, disable startup apps, and check for malware.",
+        "tags": [
+            "windows",
+            "performance",
+            "speed"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "30d16697-edde-4c9d-9faa-43cb453b520a",
+        "title": "MacBook Overheating Issue",
+        "content": "MacBook overheating. Check fan operation, clean dust, and reduce CPU-intensive tasks.",
+        "tags": [
+            "mac",
+            "temperature",
+            "cooling"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e6ccc3de-8c4e-4200-8b2f-29cca8431d25",
+        "title": "Windows Defender Not Updating",
+        "content": "Windows Defender fails to update. Check internet connection and manually update virus definitions.",
+        "tags": [
+            "windows",
+            "security",
+            "antivirus"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "dbbc5e5c-5c9f-40a7-b94c-0da61fc43b85",
+        "title": "Mac External Monitor Not Detected",
+        "content": "Mac does not detect an external monitor. Check cables, update macOS, and reset display settings.",
+        "tags": [
+            "mac",
+            "display",
+            "monitor"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "8282b32b-2b6a-4c6b-84fc-66f865a009ad",
+        "title": "Windows Printer Not Responding",
+        "content": "Windows printer is unresponsive. Restart the print spooler service and check driver compatibility.",
+        "tags": [
+            "windows",
+            "printer",
+            "hardware"
+        ],
+        "category": "Windows Issues",
+        "type": "kb"
+    },
+    {
+        "id": "ec300054-4778-4b7c-ac36-fc018a51c609",
+        "title": "Mac App Store Not Downloading Apps",
+        "content": "Mac App Store fails to download apps. Sign out and back into iCloud, clear cache, and restart.",
+        "tags": [
+            "mac",
+            "app store",
+            "download"
+        ],
+        "category": "Mac Issues",
+        "type": "kb"
+    },
+    {
+        "id": "97fa0655-0c34-434f-9414-0af2e5a80570",
+        "title": "Technical Issue 16",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 16.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "4dac22b5-720b-41c7-9698-58f3f17c8817",
+        "title": "Technical Issue 17",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 17.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "d82bc510-f039-4523-8dae-a9efc2891ac0",
+        "title": "Technical Issue 18",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 18.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e98a522d-cdd4-4df6-8ae1-32a08b638be8",
+        "title": "Technical Issue 19",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 19.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "0e1613a6-95b2-4f3a-bb86-cdc73b6d4884",
+        "title": "Technical Issue 20",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 20.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "9b7ba881-f5bb-4056-aa6c-52146b591fdd",
+        "title": "Technical Issue 21",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 21.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "f1052cad-9cc4-448d-a99c-c136eef7f0c5",
+        "title": "Technical Issue 22",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 22.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e0c8cfda-4276-4e5f-8e9b-6abd0e15eed8",
+        "title": "Technical Issue 23",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 23.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "443b68ff-8922-4c32-a86e-808f47463699",
+        "title": "Technical Issue 24",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 24.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "0db195b4-1128-4cbb-b116-4d88993262a7",
+        "title": "Technical Issue 25",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 25.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "7634d02e-d749-4779-8ab4-cc163c040357",
+        "title": "Technical Issue 26",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 26.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "9d82779c-3157-49d0-9c00-b8ac628bd5b6",
+        "title": "Technical Issue 27",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 27.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e43438c9-6974-4851-b120-6cf577c60b6c",
+        "title": "Technical Issue 28",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 28.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e07e6add-2d7e-4f76-a208-24fa1f3cdba6",
+        "title": "Technical Issue 29",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 29.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "94e9fc5b-2f79-40a1-b79d-35b24bd5f11d",
+        "title": "Technical Issue 30",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 30.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "dc77f6f7-1313-4830-89b6-199a76152033",
+        "title": "Technical Issue 31",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 31.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "dd7ab804-e83c-49fc-a069-72d0dd7931b9",
+        "title": "Technical Issue 32",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 32.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "f208fc06-0e66-48af-9927-830fe1f75728",
+        "title": "Technical Issue 33",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 33.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "696340c0-4ef3-4590-9b27-41d65e5965cf",
+        "title": "Technical Issue 34",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 34.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "650ba433-b3f7-4d64-a9c6-e2c11af450d9",
+        "title": "Technical Issue 35",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 35.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "6c7e0cb0-3bce-424f-8332-82a1ee146596",
+        "title": "Technical Issue 36",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 36.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "610aa3c4-1812-455b-9bca-f82cbc1091ec",
+        "title": "Technical Issue 37",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 37.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "6ce3ae34-6210-42ac-9131-5a19c7bc08c4",
+        "title": "Technical Issue 38",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 38.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "b21d0b19-f883-4fa2-984e-45460a9653da",
+        "title": "Technical Issue 39",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 39.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "f6941e67-57d1-4975-8816-45e06ecc1a3a",
+        "title": "Technical Issue 40",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 40.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "cbdd24d4-d985-4563-b8dc-f1f6c8421515",
+        "title": "Technical Issue 41",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 41.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "205f1d83-a822-4c6d-8cfd-c60142b1ca35",
+        "title": "Technical Issue 42",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 42.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "e842cfef-1787-4544-b9da-9542db13b150",
+        "title": "Technical Issue 43",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 43.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "1cd738bb-024d-428a-a66b-a72506742992",
+        "title": "Technical Issue 44",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 44.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "32d36a3b-e39f-4710-b347-f6d70a800b72",
+        "title": "Technical Issue 45",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 45.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "3e378e97-c7dc-4ad7-9324-c15d7cbf0984",
+        "title": "Technical Issue 46",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 46.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "f7996213-0a07-4345-803e-69ddd5be02ef",
+        "title": "Technical Issue 47",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 47.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "714757df-5b48-475a-a157-28e4d0e829de",
+        "title": "Technical Issue 48",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 48.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    },
+    {
+        "id": "617f9635-4372-4e32-9664-95c120a5fb68",
+        "title": "Technical Issue 49",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 49.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "General Issues",
+        "type": "kb"
+    },
+    {
+        "id": "21549192-017e-46bf-9742-3d66ea6d5da0",
+        "title": "Technical Issue 50",
+        "content": "This is a unique issue regarding system performance, error handling, or troubleshooting for case 50.",
+        "tags": [
+            "troubleshooting",
+            "performance",
+            "error"
+        ],
+        "category": "Server Issues",
+        "type": "kb"
+    }
+]
